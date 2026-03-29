@@ -9,3 +9,4 @@ initReveal();
 initNav(NAV_SECTIONS);
 initCarousel(TESTIMONIALS, CAROUSEL);
 initServices();
+initI18n();
