@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GrowIT — Your Mission Is Our Mission</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <a href="#" aria-label="GrowIT Home">
+        <img
+          src="logo.png"
+          alt="GrowIT Business Consulting"
+          style="height: 46px; width: auto; display: block"
+        />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#testimonials">Stories</a></li>
+      </ul>
+      <div class="nav-right">
+        <div style="display: flex; align-items: center; gap: 0.5rem">
+          <span class="toggle-label">☀︎</span>
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle theme"
+          ></button>
+          <span class="toggle-label">☽</span>
+        </div>
+        <a href="#contact"
+          ><button class="btn-primary">Start a Conversation →</button></a
+        >
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-grid max">
+        <div>
+          <div class="hero-badge">✦ We help businesses grow</div>
+          <h1 id="hero-heading"></h1>
+          <p class="hero-sub">
+            From entry-level startups to mid-stage companies, GrowIT turns your
+            ambition into measurable momentum. Your mission is our mission — and
+            growth is what we do.
+          </p>
+          <div class="hero-ctas">
+            <a href="#contact"
+              ><button class="btn-large primary">
+                Start a Conversation
+              </button></a
+            >
+            <a href="#services"
+              ><button class="btn-large outline">Explore Services</button></a
+            >
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="dash-card">
+            <div class="dash-header">
+              <span class="dash-title">Growth Dashboard</span>
+              <span class="dash-tag">↑ Live</span>
+            </div>
+            <div class="metrics">
+              <div class="metric-box">
+                <div class="metric-num">3.2<span>×</span></div>
+                <div class="metric-label">Revenue growth avg.</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-num">87<span>%</span></div>
+                <div class="metric-label">Client retention rate</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-num">140<span>+</span></div>
+                <div class="metric-label">Clients served</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-num">6<span>mo</span></div>
+                <div class="metric-label">Avg. time to results</div>
+              </div>
+            </div>
+            <div class="growth-bar">
+              <div class="bar-label">
+                <span>Market Expansion</span><span>78%</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill" style="width: 78%"></div>
+              </div>
+            </div>
+            <div class="growth-bar">
+              <div class="bar-label">
+                <span>Revenue Growth</span><span>91%</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill" style="width: 91%"></div>
+              </div>
+            </div>
+            <div class="client-row">
+              <div class="avatar-stack">
+                <div class="av av1">JL</div>
+                <div class="av av2">MK</div>
+                <div class="av av3">SR</div>
+                <div class="av av4">+8</div>
+              </div>
+              <div style="font-size: 0.82rem; color: var(--text2)">
+                Active growth partnerships right now
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker-wrap">
+      <div class="ticker-track">
+        <div class="ticker-item">
+          Your Mission Is Our Mission
+          <div class="ticker-dot"></div>
+        </div>
+        <div class="ticker-item">
+          Entry Stage &amp; Mid Stage Growth
+          <div class="ticker-dot"></div>
+        </div>
+        <div class="ticker-item">
+          Start A Conversation
+          <div class="ticker-dot"></div>
+        </div>
+        <div class="ticker-item">
+          Strategy That Scales
+          <div class="ticker-dot"></div>
+        </div>
+        <div class="ticker-item">
+          Results You Can Measure
+          <div class="ticker-dot"></div>
+        </div>
+        <div class="ticker-item">
+          Built For Ambitious Founders
+          <div class="ticker-dot"></div>
+        </div>
+        <!-- Duplicate for seamless loop -->
+        <div class="ticker-item">
+          Your Mission Is Our Mission
+          <div class="ticker-dot"></div>
+        </div>
+        <div class="ticker-item">
+          Entry Stage &amp; Mid Stage Growth
+          <div class="ticker-dot"></div>
+        </div>
+        <div class="ticker-item">
+          Start A Conversation
+          <div class="ticker-dot"></div>
+        </div>
+        <div class="ticker-item">
+          Strategy That Scales
+          <div class="ticker-dot"></div>
+        </div>
+        <div class="ticker-item">
+          Results You Can Measure
+          <div class="ticker-dot"></div>
+        </div>
+        <div class="ticker-item">
+          Built For Ambitious Founders
+          <div class="ticker-dot"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT / MISSION -->
+    <section class="about" id="about">
+      <div class="max about-grid">
+        <div class="reveal">
+          <span class="section-label">Our Mission</span>
+          <h2 class="section-h">
+            We help entry-stage and mid-stage businesses grow.
+          </h2>
+          <p class="section-sub">
+            GrowIT bridges the gap between where you are and where you want to
+            be. We partner with founders, operators and leadership teams to
+            build the systems, strategy, and momentum that drive real growth.
+          </p>
+          <div class="about-stat-grid" id="statGrid"></div>
+        </div>
+        <div class="reveal">
+          <div class="mission-box">
+            <div class="mission-quote">
+              "Your mission is our mission — we don't succeed unless you do."
+            </div>
+            <div class="mission-attr">— GrowIT Philosophy</div>
+            <a href="#contact" class="mission-cta">Start a Conversation →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="max">
+        <div class="reveal">
+          <span class="section-label">What We Do</span>
+          <h2 class="section-h">
+            Expertise built for every stage of your journey.
+          </h2>
+        </div>
+        <div class="services-grid">
+
+          <div class="svc-card reveal">
+            <div class="svc-inner">
+              <div class="svc-front">
+                <div class="svc-icon">🗺️</div>
+                <div class="svc-name">Growth Strategy</div>
+                <div class="svc-desc">We develop clear, actionable roadmaps aligned with your market, team, and ambitions — built to scale.</div>
+                <div class="svc-hint">↻ Learn more</div>
+              </div>
+              <div class="svc-back">
+                <div class="svc-back-title">Growth Strategy</div>
+                <ul class="svc-back-list">
+                  <li>Custom 90-day and annual growth roadmaps</li>
+                  <li>Competitive landscape analysis</li>
+                  <li>OKR and milestone planning</li>
+                  <li>Best for: startups ready to move from idea to traction</li>
+                </ul>
+                <div class="svc-hint">↻ Flip back</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="svc-card reveal">
+            <div class="svc-inner">
+              <div class="svc-front">
+                <div class="svc-icon">📊</div>
+                <div class="svc-name">Market Validation</div>
+                <div class="svc-desc">Before you invest, we validate. Data-driven analysis that de-risks your biggest moves and finds your real opportunity.</div>
+                <div class="svc-hint">↻ Learn more</div>
+              </div>
+              <div class="svc-back">
+                <div class="svc-back-title">Market Validation</div>
+                <ul class="svc-back-list">
+                  <li>Customer discovery interviews</li>
+                  <li>TAM / SAM / SOM sizing</li>
+                  <li>Demand testing before you build</li>
+                  <li>Best for: founders unsure if their market is real</li>
+                </ul>
+                <div class="svc-hint">↻ Flip back</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="svc-card reveal">
+            <div class="svc-inner">
+              <div class="svc-front">
+                <div class="svc-icon">⚙️</div>
+                <div class="svc-name">Operations &amp; Systems</div>
+                <div class="svc-desc">We streamline the engine behind your growth — processes, tools, and team structures built for efficiency.</div>
+                <div class="svc-hint">↻ Learn more</div>
+              </div>
+              <div class="svc-back">
+                <div class="svc-back-title">Operations &amp; Systems</div>
+                <ul class="svc-back-list">
+                  <li>SOPs and process documentation</li>
+                  <li>Tool stack audit and optimisation</li>
+                  <li>Hiring frameworks and org design</li>
+                  <li>Best for: scaling teams feeling chaotic</li>
+                </ul>
+                <div class="svc-hint">↻ Flip back</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="svc-card reveal">
+            <div class="svc-inner">
+              <div class="svc-front">
+                <div class="svc-icon">💰</div>
+                <div class="svc-name">Revenue Acceleration</div>
+                <div class="svc-desc">From pipeline design to pricing architecture, we identify and unlock the revenue levers you're not pulling yet.</div>
+                <div class="svc-hint">↻ Learn more</div>
+              </div>
+              <div class="svc-back">
+                <div class="svc-back-title">Revenue Acceleration</div>
+                <ul class="svc-back-list">
+                  <li>Pricing model redesign</li>
+                  <li>Sales funnel and pipeline audit</li>
+                  <li>Upsell and retention strategy</li>
+                  <li>Best for: businesses with traction but flat revenue</li>
+                </ul>
+                <div class="svc-hint">↻ Flip back</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="svc-card reveal">
+            <div class="svc-inner">
+              <div class="svc-front">
+                <div class="svc-icon">🤝</div>
+                <div class="svc-name">Partnerships &amp; BD</div>
+                <div class="svc-desc">We help you build the alliances and distribution channels that compound your growth without proportional cost.</div>
+                <div class="svc-hint">↻ Learn more</div>
+              </div>
+              <div class="svc-back">
+                <div class="svc-back-title">Partnerships &amp; BD</div>
+                <ul class="svc-back-list">
+                  <li>Partner identification and outreach</li>
+                  <li>Co-marketing and distribution deals</li>
+                  <li>Channel strategy and negotiation</li>
+                  <li>Best for: businesses wanting leverage without headcount</li>
+                </ul>
+                <div class="svc-hint">↻ Flip back</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="svc-card reveal">
+            <div class="svc-inner">
+              <div class="svc-front">
+                <div class="svc-icon">🚀</div>
+                <div class="svc-name">Launch &amp; Scale</div>
+                <div class="svc-desc">New market, new product, new phase — we plan and execute go-to-market with precision and pace.</div>
+                <div class="svc-hint">↻ Learn more</div>
+              </div>
+              <div class="svc-back">
+                <div class="svc-back-title">Launch &amp; Scale</div>
+                <ul class="svc-back-list">
+                  <li>Go-to-market playbook design</li>
+                  <li>Launch sequencing and PR strategy</li>
+                  <li>Post-launch iteration and feedback loops</li>
+                  <li>Best for: businesses entering new markets or launching products</li>
+                </ul>
+                <div class="svc-hint">↻ Flip back</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how" id="how">
+      <div class="max">
+        <div class="reveal">
+          <span class="section-label">How It Works</span>
+          <h2 class="section-h">
+            From first conversation to measurable results.
+          </h2>
+        </div>
+        <div class="how-steps">
+          <div class="step reveal">
+            <div class="step-num">01</div>
+            <div class="step-title">Start a Conversation</div>
+            <div class="step-desc">
+              No pitch decks, no pressure. We listen first — to understand your
+              vision, challenges, and where you really want to go.
+            </div>
+          </div>
+          <div class="step reveal">
+            <div class="step-num">02</div>
+            <div class="step-title">Deep Diagnosis</div>
+            <div class="step-desc">
+              We map your current state against your growth potential — market,
+              ops, revenue, and team — to find the real levers.
+            </div>
+          </div>
+          <div class="step reveal">
+            <div class="step-num">03</div>
+            <div class="step-title">Build the Roadmap</div>
+            <div class="step-desc">
+              We co-create a clear, prioritised plan that is realistic,
+              ambitious, and ownership-driven from day one.
+            </div>
+          </div>
+          <div class="step reveal">
+            <div class="step-num">04</div>
+            <div class="step-title">Execute &amp; Grow</div>
+            <div class="step-desc">
+              We stay in the trenches with you — hands-on support,
+              accountability, and iteration until results are real.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="testimonials">
+      <div class="max">
+        <div class="reveal">
+          <span class="section-label">Client Stories</span>
+          <h2 class="section-h">
+            Founders and operators who trusted us with their mission.
+          </h2>
+        </div>
+
+        <!-- 
+          CAROUSEL STRUCTURE NOTE:
+          Buttons sit INSIDE .testimonials-carousel but OUTSIDE .testi-viewport.
+          .testi-viewport is the clipping window — overflow:hidden lives here.
+          .testi-track slides inside it via translateX.
+          This keeps buttons visible and unclipped on all screen sizes.
+        -->
+        <div class="testimonials-carousel">
+          <button class="carousel-btn prev" aria-label="Previous testimonial">
+            &#8592;
+          </button>
+
+          <div class="testi-viewport">
+            <div class="testi-track" id="testiTrack"></div>
+          </div>
+
+          <button class="carousel-btn next" aria-label="Next testimonial">
+            &#8594;
+          </button>
+        </div>
+
+        <div class="carousel-dots" id="carouselDots"></div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <div class="cta-band">
+      <div class="cta-band-inner reveal">
+        <div class="cta-badge">✦ Let's build something together</div>
+        <h2 class="cta-h">Ready to make your mission a reality?</h2>
+        <p class="cta-sub">
+          Whether you're just getting started or ready to scale — the best time
+          to talk is now. No commitment, just a conversation.
+        </p>
+        <div class="cta-actions">
+          <a href="#contact"
+            ><button class="btn-white">Start a Conversation</button></a
+          >
+          <a href="#services"
+            ><button class="btn-ghost-white">Explore Services</button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <section class="contact" id="contact">
+      <div class="max contact-grid">
+        <div class="reveal">
+          <span class="section-label">Contact</span>
+          <div class="contact-info">
+            <h2>Let's start a conversation.</h2>
+            <p class="section-sub">
+              Reach out and tell us where you are and where you want to be.
+              We'll take it from there.
+            </p>
+            <div class="contact-detail">
+              <div class="cd-icon">✉️</div>
+              <div>
+                <div class="cd-label">Email us</div>
+                <div class="cd-val">hello@growit.co</div>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="cd-icon">📞</div>
+              <div>
+                <div class="cd-label">Call us</div>
+                <div class="cd-val">+1 (800) GROW-IT</div>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="cd-icon">📍</div>
+              <div>
+                <div class="cd-label">Location</div>
+                <div class="cd-val">
+                  Available globally · Remote &amp; on-site
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-card reveal calendly-popup-card">
+          <div class="calendly-popup-icon">📅</div>
+          <h3>Book a free intro call</h3>
+          <p>No sales pitch — just a genuine conversation about your business. Pick a time that works for you.</p>
+          <button
+            class="btn-primary calendly-popup-btn"
+            onclick="Calendly.initPopupWidget({url:'https://calendly.com/duolingopremium007/new-meeting?hide_gdpr_banner=1'}); return false;"
+          >
+            Choose a Time →
+          </button>
+          <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="max">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <img
+              src="logo.svg"
+              alt="GrowIT Business Consulting"
+              style="
+                height: 40px;
+                width: auto;
+                display: block;
+                margin-bottom: 0.75rem;
+              "
+            />
+            <p>
+              We help entry-stage and mid-stage businesses grow. Your mission is
+              our mission.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Services</h4>
+            <a href="#services">Growth Strategy</a>
+            <a href="#services">Market Validation</a>
+            <a href="#services">Operations &amp; Systems</a>
+            <a href="#services">Revenue Acceleration</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="#about">About GrowIT</a>
+            <a href="#how">How It Works</a>
+            <a href="#testimonials">Client Stories</a>
+          </div>
+          <div class="footer-col">
+            <h4>Connect</h4>
+            <a href="#contact">Start a Conversation</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter / X</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 GrowIT Consulting. All rights reserved.</span>
+          <span>Privacy Policy · Terms of Service</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/hero.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/reveal.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/main.js"></script>
+    <script src="chatbot.js"></script>
+  </body>
+</html>
