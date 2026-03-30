@@ -1,10 +1,10 @@
 function initI18n() {
   const LANGS = [
-    { code: 'en', flag: '🇬🇧', label: 'EN' },
-    { code: 'fr', flag: '🇫🇷', label: 'FR' },
-    { code: 'de', flag: '🇩🇪', label: 'DE' },
-    { code: 'es', flag: '🇪🇸', label: 'ES' },
-    { code: 'it', flag: '🇮🇹', label: 'IT' },
+    { code: 'en', iso: 'gb', label: 'EN' },
+    { code: 'fr', iso: 'fr', label: 'FR' },
+    { code: 'de', iso: 'de', label: 'DE' },
+    { code: 'es', iso: 'es', label: 'ES' },
+    { code: 'it', iso: 'it', label: 'IT' },
   ];
 
   // Word to wrap in <em> in the hero heading per language
@@ -29,11 +29,13 @@ function initI18n() {
       </svg>
     </button>
     <ul id="lang-dropdown" role="listbox">
-      ${LANGS.map(l => `
+      ${LANGS.map(
+        (l) => `
         <li role="option" data-lang="${l.code}">
-          <span>${l.flag}</span>${l.label}
+          <span><img src="https://flagcdn.com/20x15/${l.iso}.png" width="20" height="15" alt="${l.label}"></span>${l.label}
         </li>
-      `).join('')}
+      `,
+      ).join('')}
     </ul>
   `;
 
@@ -67,7 +69,7 @@ function initI18n() {
   // ── Helpers ──────────────────────────────────────────────────────────────────
 
   function updateBtn(lang) {
-    dropdown.querySelectorAll('li').forEach(li => {
+    dropdown.querySelectorAll('li').forEach((li) => {
       li.classList.toggle('active', li.dataset.lang === lang);
     });
   }
@@ -102,7 +104,8 @@ function initI18n() {
     if (heroHeading) {
       const [l1, l2] = t.hero.lines;
       const emWord = EM_WORDS[lang];
-      const mark = str => str.replace(new RegExp(`(${emWord})`, 'i'), '<em>$1</em>');
+      const mark = (str) =>
+        str.replace(new RegExp(`(${emWord})`, 'i'), '<em>$1</em>');
       heroHeading.innerHTML = `${mark(l1)}<br/>${mark(l2)}`;
     }
 
@@ -119,11 +122,13 @@ function initI18n() {
     const dashTag = document.querySelector('.dash-tag');
     if (dashTag) dashTag.textContent = t.hero.dashboard.live;
     document.querySelectorAll('.metric-label').forEach((el, i) => {
-      if (t.hero.dashboard.metrics[i]) el.textContent = t.hero.dashboard.metrics[i];
+      if (t.hero.dashboard.metrics[i])
+        el.textContent = t.hero.dashboard.metrics[i];
     });
     document.querySelectorAll('.bar-label').forEach((el, i) => {
       const labelSpan = el.querySelector('span:first-child');
-      if (labelSpan && t.hero.dashboard.bars[i]) labelSpan.textContent = t.hero.dashboard.bars[i];
+      if (labelSpan && t.hero.dashboard.bars[i])
+        labelSpan.textContent = t.hero.dashboard.bars[i];
     });
     const activeLabel = document.querySelector('.client-row > div:last-child');
     if (activeLabel) activeLabel.textContent = t.hero.dashboard.activeLabel;
@@ -208,18 +213,27 @@ function initI18n() {
     // FOOTER
     setText('.footer-brand p', t.footer.tagline);
     const footerCols = document.querySelectorAll('.footer-col');
-    if (footerCols[0]) footerCols[0].querySelector('h4').textContent = t.footer.servicesHeading;
-    if (footerCols[1]) footerCols[1].querySelector('h4').textContent = t.footer.companyHeading;
-    if (footerCols[2]) footerCols[2].querySelector('h4').textContent = t.footer.connectHeading;
-    footerCols[0] && footerCols[0].querySelectorAll('a').forEach((el, i) => {
-      if (t.footer.links.services[i]) el.textContent = t.footer.links.services[i];
-    });
-    footerCols[1] && footerCols[1].querySelectorAll('a').forEach((el, i) => {
-      if (t.footer.links.company[i]) el.textContent = t.footer.links.company[i];
-    });
-    footerCols[2] && footerCols[2].querySelectorAll('a').forEach((el, i) => {
-      if (t.footer.links.connect[i]) el.textContent = t.footer.links.connect[i];
-    });
+    if (footerCols[0])
+      footerCols[0].querySelector('h4').textContent = t.footer.servicesHeading;
+    if (footerCols[1])
+      footerCols[1].querySelector('h4').textContent = t.footer.companyHeading;
+    if (footerCols[2])
+      footerCols[2].querySelector('h4').textContent = t.footer.connectHeading;
+    footerCols[0] &&
+      footerCols[0].querySelectorAll('a').forEach((el, i) => {
+        if (t.footer.links.services[i])
+          el.textContent = t.footer.links.services[i];
+      });
+    footerCols[1] &&
+      footerCols[1].querySelectorAll('a').forEach((el, i) => {
+        if (t.footer.links.company[i])
+          el.textContent = t.footer.links.company[i];
+      });
+    footerCols[2] &&
+      footerCols[2].querySelectorAll('a').forEach((el, i) => {
+        if (t.footer.links.connect[i])
+          el.textContent = t.footer.links.connect[i];
+      });
     setText('.footer-bottom span:first-child', t.footer.copyright);
     setText('.footer-bottom span:last-child', t.footer.legal);
   }
